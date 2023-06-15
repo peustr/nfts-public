@@ -1,0 +1,19 @@
+import meta_dataset.data.config
+
+EpisodeDescriptionConfig.min_ways = 5
+EpisodeDescriptionConfig.max_ways_upper_bound = 50
+EpisodeDescriptionConfig.max_num_query = 10
+EpisodeDescriptionConfig.min_examples_in_class = 0
+EpisodeDescriptionConfig.max_support_set_size = 500
+EpisodeDescriptionConfig.max_support_size_contrib_per_class = 100
+EpisodeDescriptionConfig.min_log_weight = -0.69314718055994529  # np.log(0.5)
+EpisodeDescriptionConfig.max_log_weight = 0.69314718055994529  # np.log(2)
+EpisodeDescriptionConfig.ignore_dag_ontology = False
+EpisodeDescriptionConfig.ignore_bilevel_ontology = False
+EpisodeDescriptionConfig.ignore_hierarchy_probability = 0.0
+EpisodeDescriptionConfig.simclr_episode_fraction = 0.0
+
+DataConfig.image_height = 224
+DataConfig.shuffle_buffer_size = 1024
+DataConfig.read_buffer_size_bytes = 1048576  # 1 MB (1024**2)
+DataConfig.num_prefetch = 64
